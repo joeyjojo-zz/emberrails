@@ -1,0 +1,30 @@
+<h2>Product</h2>
+
+<form {{action save on="submit"}}>
+  
+  <p>
+    <label for="title">Title</label><br>
+    {{view Ember.TextField valueBinding="title" id="title"}}
+  </p>
+  
+  <p>
+    <label for="description">Description</label><br>
+    {{view Ember.TextField valueBinding="description" id="description"}}
+  </p>
+  
+  <p>
+    <label for="image_url">Image url</label><br>
+    {{view Ember.TextField valueBinding="image_url" id="image_url"}}
+  </p>
+  
+  <p>
+    <label for="price">Price</label><br>
+    {{view Ember.TextField valueBinding="price" id="price"}}
+  </p>
+  
+  <p>
+    <button type="submit">Save</button>
+  </p>
+
+</form>
+

@@ -1,0 +1,25 @@
+<h2>Products</h2>
+
+{{#linkTo "new_product"}}New Product{{/linkTo}}
+
+<table>
+  <thead>
+    <th>title</th>
+    <th>description</th>
+    <th>image_url</th>
+    <th>price</th>
+  </thead>
+  <tbody>
+    {{#each product in controller}}
+    <tr>
+      <td>{{product.title}}</td>
+      <td>{{product.description}}</td>
+      <td>{{product.image_url}}</td>
+      <td>{{product.price}}</td>
+      <td>{{#linkTo "product" product}}view{{/linkTo}}</td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+
