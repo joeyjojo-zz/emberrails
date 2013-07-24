@@ -23,6 +23,6 @@ class ProductsController < ApplicationController
 
   # Strong Parameters (Rails 4)
   def product_params
-    params.require(:title).permit(:title, :description, :image_url, :price)
+    params.require(:product).permit(:title, :description, :image_url, :price)
   end
 end
