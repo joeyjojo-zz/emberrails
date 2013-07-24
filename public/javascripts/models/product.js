@@ -2,11 +2,11 @@ var Product = DS.Model.extend({
 
   title: DS.attr('string'),
 
-  description: DS.attr('text'),
+  description: DS.attr('string'),
 
   image_url: DS.attr('string'),
 
-  price: DS.attr('decimal')
+  price: DS.attr('number')
 
 });
 
